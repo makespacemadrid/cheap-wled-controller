@@ -5,6 +5,141 @@
 	(uuid "6a5d3644-22ac-4961-ba70-9807615c046f")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Power_Protection:RCLAMP0502BA"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -228,6 +363,198 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Regulator_Switching:TPS54202DDC"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS54202DDC"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 1.27 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
+				(at -7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2A, 4.5 to 28V Input, EMI Friendly integrated switch synchronous step-down regulator, pulse-skipping, SOT-23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switching buck converter power-supply voltage regulator emi spread spectrum"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS54202DDC_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TPS54202DDC_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3185,7 +3512,7 @@
 		)
 	)
 	(junction
-		(at 83.82 111.76)
+		(at 85.09 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c08e677-9f57-4124-a630-1f78ebca3af6")
@@ -3203,7 +3530,7 @@
 		(uuid "4026a56c-5ab3-4dcf-8c7d-601a6cc1b4f2")
 	)
 	(junction
-		(at 81.28 111.76)
+		(at 82.55 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81a9f015-93fb-49e1-8e0a-137c1bff6be7")
@@ -3221,7 +3548,7 @@
 		(uuid "9f6b2d74-a7d0-4ab1-a56c-066507b687b4")
 	)
 	(junction
-		(at 85.09 111.76)
+		(at 86.36 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3f6f326-c4d5-42c2-88a2-652d9a909c9c")
@@ -3234,7 +3561,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 53.34) (xy 170.18 53.34)
+			(xy 170.18 39.37) (xy 172.72 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3304,13 +3631,23 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 111.76) (xy 78.74 115.57)
+			(xy 80.01 132.08) (xy 80.01 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1f45f297-2564-401b-8358-fbfce71bc82d")
+	)
+	(wire
+		(pts
+			(xy 73.66 110.49) (xy 73.66 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250dd0c9-8b96-4a1b-b567-a521fa0b3c72")
 	)
 	(wire
 		(pts
@@ -3364,7 +3701,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 58.42) (xy 149.86 58.42)
+			(xy 210.82 115.57) (xy 215.9 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e3852c6-911e-4313-b24f-a6df3fcfbe3d")
+	)
+	(wire
+		(pts
+			(xy 148.59 44.45) (xy 152.4 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3394,7 +3741,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 128.27) (xy 81.28 130.81)
+			(xy 82.55 148.59) (xy 82.55 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3414,7 +3761,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 111.76) (xy 86.36 111.76)
+			(xy 86.36 132.08) (xy 87.63 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3424,13 +3771,13 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 50.8) (xy 97.79 50.8)
+			(xy 184.15 113.03) (xy 190.5 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "655f9557-dd7f-4065-9ce8-4e925c60a5aa")
+		(uuid "66c9ce8f-027b-4450-ada9-c37f2140ce85")
 	)
 	(wire
 		(pts
@@ -3444,7 +3791,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 115.57) (xy 86.36 111.76)
+			(xy 87.63 135.89) (xy 87.63 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3484,16 +3831,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 78.74) (xy 85.09 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70615fae-048b-4257-b3f4-d3975cabd964")
-	)
-	(wire
-		(pts
 			(xy 66.04 69.85) (xy 67.31 69.85)
 		)
 		(stroke
@@ -3504,7 +3841,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 111.76) (xy 78.74 111.76)
+			(xy 82.55 132.08) (xy 80.01 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3524,7 +3861,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 128.27) (xy 83.82 130.81)
+			(xy 85.09 148.59) (xy 85.09 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3584,7 +3921,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 53.34) (xy 124.46 53.34)
+			(xy 251.46 113.03) (xy 255.27 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3604,7 +3941,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 55.88) (xy 97.79 55.88)
+			(xy 224.79 115.57) (xy 228.6 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3614,7 +3951,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 111.76) (xy 81.28 111.76)
+			(xy 85.09 132.08) (xy 82.55 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3634,7 +3971,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 128.27) (xy 78.74 132.08)
+			(xy 80.01 148.59) (xy 80.01 152.4)
 		)
 		(stroke
 			(width 0)
@@ -3644,7 +3981,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 78.74) (xy 85.09 111.76)
+			(xy 86.36 78.74) (xy 86.36 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3654,13 +3991,23 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 140.97) (xy 81.28 146.05)
+			(xy 82.55 161.29) (xy 82.55 166.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b67ef8e6-b72c-49cb-ab6a-0b8d8aead658")
+	)
+	(wire
+		(pts
+			(xy 215.9 115.57) (xy 215.9 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb5bbf31-0c9d-4922-83ba-3337df8c504b")
 	)
 	(wire
 		(pts
@@ -3694,7 +4041,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 111.76) (xy 81.28 115.57)
+			(xy 222.25 110.49) (xy 228.6 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3ffe2da-5290-4d8a-a78c-e11425823223")
+	)
+	(wire
+		(pts
+			(xy 82.55 132.08) (xy 82.55 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3704,7 +4061,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 111.76) (xy 83.82 115.57)
+			(xy 85.09 132.08) (xy 85.09 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3734,7 +4091,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 128.27) (xy 86.36 130.81)
+			(xy 87.63 148.59) (xy 87.63 151.13)
 		)
 		(stroke
 			(width 0)
@@ -3744,7 +4101,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 58.42) (xy 171.45 58.42)
+			(xy 170.18 44.45) (xy 173.99 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3754,7 +4111,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 55.88) (xy 149.86 55.88)
+			(xy 86.36 78.74) (xy 87.63 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbff3b29-050b-41a1-8ba8-9be92af98d8f")
+	)
+	(wire
+		(pts
+			(xy 142.24 41.91) (xy 152.4 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3764,7 +4131,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 111.76) (xy 85.09 111.76)
+			(xy 85.09 132.08) (xy 86.36 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3774,7 +4141,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 132.08) (xy 69.85 132.08)
+			(xy 80.01 152.4) (xy 71.12 152.4)
 		)
 		(stroke
 			(width 0)
@@ -3814,7 +4181,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 77.47) (xy 43.18 69.85)
+			(xy 43.18 69.85) (xy 43.18 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3832,8 +4199,116 @@
 		)
 		(uuid "ffbd2707-dd20-4e18-b697-e79e1f38d5c5")
 	)
+	(rectangle
+		(start 219.71 91.44)
+		(end 259.08 134.62)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 61c29e14-2379-4188-a0ee-5177d42022e8)
+	)
+	(rectangle
+		(start 68.58 130.81)
+		(end 110.49 173.99)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 85b32fa9-e233-4a48-b241-a2337f90d0d2)
+	)
+	(rectangle
+		(start 138.43 21.59)
+		(end 189.23 64.77)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8f6ab34b-a82e-4474-a14e-86a85729ad96)
+	)
+	(rectangle
+		(start 179.07 91.44)
+		(end 218.44 134.62)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid cf4e5ec2-d114-4548-8ac5-c096920dbe0f)
+	)
+	(text "selección del voltaje del PD"
+		(exclude_from_sim no)
+		(at 85.598 171.704 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1443d2a5-0b4d-46c4-8b87-01807ef492d4")
+	)
+	(text "de Voltaje USB a 5v"
+		(exclude_from_sim no)
+		(at 199.136 93.726 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "18a81ff2-bc38-4af7-aff7-2bd00a24341d")
+	)
+	(text "la línea de datos de la tira funciona mejor a 5v"
+		(exclude_from_sim no)
+		(at 163.576 55.118 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2865f23e-bd4b-4a3a-9055-f5b323330636")
+	)
+	(text "SW (pin 6) \na un inductor seguido de un diodo\ny un capacitor para estabilizar la salida."
+		(exclude_from_sim no)
+		(at 199.644 139.192 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ae93da88-7c20-4704-88e8-3b0c9817e106")
+	)
+	(text "de 5v a 3.3v"
+		(exclude_from_sim no)
+		(at 239.268 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bf920a6f-9040-42e0-b44d-4bf881e23574")
+	)
+	(text "elemento de protección"
+		(exclude_from_sim no)
+		(at 71.882 113.538 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f3fa5189-36b6-4e5d-831a-ebe203eb30d0")
+	)
 	(label "LED_DATA"
-		(at 139.7 55.88 0)
+		(at 142.24 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3842,8 +4317,18 @@
 		)
 		(uuid "0f6298bf-d8cd-4f00-891d-60f6dcc82a7b")
 	)
+	(label "VBUS"
+		(at 184.15 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "118ad0cb-a142-4260-a67a-3803276d4861")
+	)
 	(label "3.3v"
-		(at 124.46 53.34 0)
+		(at 255.27 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3853,7 +4338,7 @@
 		(uuid "17efaa5c-2243-418c-becb-cdfd75b14423")
 	)
 	(label "VDD_C"
-		(at 69.85 132.08 0)
+		(at 71.12 152.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3893,7 +4378,7 @@
 		(uuid "35187a06-7ee1-469f-9818-9078c6666b9a")
 	)
 	(label "DATA_OUTPUT"
-		(at 171.45 58.42 0)
+		(at 173.99 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3903,7 +4388,7 @@
 		(uuid "379ad636-252b-41ac-b4e9-d260c23b1dc4")
 	)
 	(label "GND"
-		(at 73.66 110.49 0)
+		(at 73.66 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3913,7 +4398,7 @@
 		(uuid "4287aff8-62b4-49d7-b398-d5798a1c1931")
 	)
 	(label "GND"
-		(at 81.28 146.05 0)
+		(at 82.55 166.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3923,7 +4408,7 @@
 		(uuid "43493dea-3d79-4679-8c47-c750c876a675")
 	)
 	(label "GND"
-		(at 91.44 50.8 0)
+		(at 222.25 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3953,7 +4438,7 @@
 		(uuid "4c47b20e-f508-4af8-a01a-4016650420f5")
 	)
 	(label "5v"
-		(at 93.98 55.88 0)
+		(at 224.79 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3961,6 +4446,16 @@
 			(justify left bottom)
 		)
 		(uuid "754ae28a-a63b-4f3e-baa1-a830a6d88b9f")
+	)
+	(label "GND"
+		(at 200.66 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "769acea3-13fb-4ff9-b0be-ab1af12f7c6c")
 	)
 	(label "D+"
 		(at 39.37 82.55 0)
@@ -3983,7 +4478,7 @@
 		(uuid "83e8bf0e-0400-4ec0-afc7-802c7bb07e01")
 	)
 	(label "GND"
-		(at 146.05 58.42 0)
+		(at 148.59 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4062,6 +4557,16 @@
 		)
 		(uuid "d78f63e0-b93b-48d4-879a-f04efabee677")
 	)
+	(label "VBUS"
+		(at 43.18 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7ec86b8-4c2a-4bbb-a010-2152039ff490")
+	)
 	(label "GND"
 		(at 111.76 63.5 0)
 		(effects
@@ -4073,7 +4578,7 @@
 		(uuid "ef48df0c-4db6-4eeb-8794-59bf2ef435af")
 	)
 	(label "5v"
-		(at 170.18 53.34 0)
+		(at 172.72 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4084,7 +4589,7 @@
 	)
 	(symbol
 		(lib_id "easyeda:0805W8F5602T5E")
-		(at 86.36 135.89 90)
+		(at 87.63 156.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4092,7 +4597,7 @@
 		(dnp no)
 		(uuid "076bee40-b2a0-42a1-a91d-06abde9a93e7")
 		(property "Reference" "R5"
-			(at 85.344 142.748 90)
+			(at 86.614 163.068 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4101,7 +4606,7 @@
 			)
 		)
 		(property "Value" "56K"
-			(at 87.122 136.398 90)
+			(at 88.392 156.718 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4110,7 +4615,7 @@
 			)
 		)
 		(property "Footprint" "cheap-wled-controller:R0805"
-			(at 93.98 135.89 0)
+			(at 95.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4119,7 +4624,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_56KR-5602-1_C17756.html"
-			(at 96.52 135.89 0)
+			(at 97.79 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4128,7 +4633,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 135.89 0)
+			(at 87.63 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4137,7 +4642,7 @@
 			)
 		)
 		(property "LCSC Part" "C17756"
-			(at 99.06 135.89 0)
+			(at 100.33 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4239,7 +4744,7 @@
 	)
 	(symbol
 		(lib_id "easyeda:0805W8F6801T5E")
-		(at 81.28 135.89 90)
+		(at 82.55 156.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4247,7 +4752,7 @@
 		(dnp no)
 		(uuid "2c0e3846-b6b1-469d-9302-01e66f41469b")
 		(property "Reference" "R3"
-			(at 79.502 142.494 90)
+			(at 80.772 162.814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +4761,7 @@
 			)
 		)
 		(property "Value" "6.8k"
-			(at 77.216 135.89 90)
+			(at 78.486 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4770,7 @@
 			)
 		)
 		(property "Footprint" "cheap-wled-controller:R0805"
-			(at 88.9 135.89 0)
+			(at 90.17 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4779,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_6-8KR-6801-1_C17772.html"
-			(at 91.44 135.89 0)
+			(at 92.71 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4788,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 81.28 135.89 0)
+			(at 82.55 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4797,7 @@
 			)
 		)
 		(property "LCSC Part" "C17772"
-			(at 93.98 135.89 0)
+			(at 95.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,6 +4815,103 @@
 			(project ""
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TPS54202DDC")
+		(at 200.66 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "337acc2b-55ec-4f4b-ac6d-8e0bcbdd73de")
+		(property "Reference" "U6"
+			(at 190.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS54202DDC"
+			(at 200.66 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 201.93 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf"
+			(at 193.04 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191884"
+			(at 200.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P.N." ""
+			(at 200.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05b7b871-5890-465b-a770-58efeea848da")
+		)
+		(pin "2"
+			(uuid "97536bf9-6e7f-45c4-a875-ad5a6fce0510")
+		)
+		(pin "3"
+			(uuid "210fe167-feb9-4628-9a7c-6ff0a4031255")
+		)
+		(pin "4"
+			(uuid "c41bbe6c-cacc-44d9-b643-605a6c5ec288")
+		)
+		(pin "5"
+			(uuid "e8a7dff8-8ac2-41dc-89b4-47a4faebac6b")
+		)
+		(pin "6"
+			(uuid "2e6a03f3-efb3-4159-98cf-4ee94bd84112")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -4396,6 +4998,83 @@
 			(project ""
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 213.36 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ac0c8a9-0840-4f98-8c76-c3334befb3b8")
+		(property "Reference" "C2"
+			(at 213.3663 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 213.3663 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 213.36 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 213.36 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5db092b1-a0d7-4ebf-968d-a091b2408fa7")
+		)
+		(pin "2"
+			(uuid "53043b50-840b-4f8c-8c3a-300218b509f8")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4696,7 +5375,7 @@
 	)
 	(symbol
 		(lib_id "easyeda:0805W8F2402T5E")
-		(at 83.82 135.89 90)
+		(at 85.09 156.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4704,7 +5383,7 @@
 		(dnp no)
 		(uuid "b0798018-3ebd-4c79-8dbc-a0bc7df0fa72")
 		(property "Reference" "R4"
-			(at 82.55 142.494 90)
+			(at 83.82 162.814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4713,7 +5392,7 @@
 			)
 		)
 		(property "Value" "24K"
-			(at 82.804 135.89 90)
+			(at 84.074 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4722,7 +5401,7 @@
 			)
 		)
 		(property "Footprint" "cheap-wled-controller:R0805"
-			(at 91.44 135.89 0)
+			(at 92.71 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4731,7 +5410,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount-UniOhm_24KR-2402-1_C17575.html"
-			(at 93.98 135.89 0)
+			(at 95.25 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4740,7 +5419,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 135.89 0)
+			(at 85.09 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +5428,7 @@
 			)
 		)
 		(property "LCSC Part" "C17575"
-			(at 96.52 135.89 0)
+			(at 97.79 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,7 +5453,7 @@
 	)
 	(symbol
 		(lib_id "easyeda:ZX-PZ2.0-2-5PZZ")
-		(at 83.82 121.92 270)
+		(at 85.09 142.24 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4783,7 +5462,7 @@
 		(fields_autoplaced yes)
 		(uuid "b54d9ac4-e3ef-4851-afe8-fc9fa49c3e66")
 		(property "Reference" "U3"
-			(at 92.71 120.6499 90)
+			(at 93.98 140.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +5471,7 @@
 			)
 		)
 		(property "Value" "VOLTAGE SELECT"
-			(at 92.71 123.1899 90)
+			(at 93.98 143.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,7 +5480,7 @@
 			)
 		)
 		(property "Footprint" "cheap-wled-controller:HDR-TH_10P-P2.00-V-M-R2-C5-S2.00"
-			(at 71.12 121.92 0)
+			(at 72.39 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4810,7 +5489,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 121.92 0)
+			(at 85.09 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +5498,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 121.92 0)
+			(at 85.09 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4828,7 +5507,7 @@
 			)
 		)
 		(property "LCSC Part" "C7501288"
-			(at 68.58 121.92 0)
+			(at 69.85 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4877,7 +5556,7 @@
 	)
 	(symbol
 		(lib_id "easyeda:AMS1117-3.3")
-		(at 109.22 53.34 0)
+		(at 240.03 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4886,7 +5565,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf89752e-4e08-4153-96b9-c56a9973ff4b")
 		(property "Reference" "U1"
-			(at 109.22 43.18 0)
+			(at 240.03 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4894,7 +5573,7 @@
 			)
 		)
 		(property "Value" "AMS1117-3.3"
-			(at 109.22 45.72 0)
+			(at 240.03 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4902,7 +5581,7 @@
 			)
 		)
 		(property "Footprint" "cheap-wled-controller:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
-			(at 109.22 63.5 0)
+			(at 240.03 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4911,7 +5590,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_AMS_AMS1117-3-3_AMS1117-3-3_C6186.html"
-			(at 109.22 66.04 0)
+			(at 240.03 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,7 +5599,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 53.34 0)
+			(at 240.03 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4929,7 +5608,7 @@
 			)
 		)
 		(property "LCSC Part" "C6186"
-			(at 109.22 68.58 0)
+			(at 240.03 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4960,7 +5639,7 @@
 	)
 	(symbol
 		(lib_id "easyeda:74LV1T34GWH_C5199768")
-		(at 160.02 55.88 0)
+		(at 162.56 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4969,7 +5648,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7bc0e72-7759-4b4a-b435-7df31d83abc5")
 		(property "Reference" "U4"
-			(at 158.75 45.72 0)
+			(at 161.29 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4977,7 +5656,7 @@
 			)
 		)
 		(property "Value" "LED DATA LINE LEVEL SHIFTER"
-			(at 158.75 48.26 0)
+			(at 161.29 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4985,7 +5664,7 @@
 			)
 		)
 		(property "Footprint" "cheap-wled-controller:TSSOP-5_L2.0-W1.3-P0.65-LS2.1-BR"
-			(at 160.02 66.04 0)
+			(at 162.56 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4994,7 +5673,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 55.88 0)
+			(at 162.56 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5003,7 +5682,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 55.88 0)
+			(at 162.56 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5012,7 +5691,7 @@
 			)
 		)
 		(property "LCSC Part" "C5199768"
-			(at 160.02 68.58 0)
+			(at 162.56 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
