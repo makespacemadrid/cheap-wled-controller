@@ -2050,4 +2050,68 @@
       )
     )
   )
+  (symbol "XF-508P-A-B"
+    (in_bom yes)
+    (on_board yes)
+    (property
+      "Reference"
+      "FUSE"
+      (id 0)
+      (at 0 5.08 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "XF-508P-A-B"
+      (id 1)
+      (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Footprint"
+      "cheap-wled-controller:FUSE-TH_XF-508P-A-B"
+      (id 2)
+      (at 0 -7.62 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C19727304"
+      (id 5)
+      (at 0 -10.16 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (symbol "XF-508P-A-B_0_1"
+      (rectangle
+        (start -7.62 2.54)
+        (end 7.62 -2.54)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start -6.35 1.27)
+        (end -2.54 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (rectangle
+        (start 2.54 1.27)
+        (end 6.35 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+      (pin unspecified line
+        (at -10.16 -0.00 0)
+        (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 10.16 -0.00 180)
+        (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
 )
