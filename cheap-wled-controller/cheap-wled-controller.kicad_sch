@@ -13200,7 +13200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "cheap-wled-controller:LED0805-R-RD"
 			(at 121.92 100.33 90)
 			(effects
 				(font
@@ -13720,7 +13720,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "cheap-wled-controller:LED0805-R-RD"
 			(at 271.78 85.09 90)
 			(effects
 				(font
