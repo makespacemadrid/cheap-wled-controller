@@ -1,4 +1,4 @@
-26075161610397
+27809733151926
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99370,7 +99370,7 @@ DFN-8_L5.9-W5.2-P1.27-LS6.2-BL
 
 0
 9
-9
+3
 cheap-wled-controller
 ESSOP-10_L4.9-W3.9-P1.0-LS6.0-TL-EP
 
@@ -99394,6 +99394,13 @@ HDR-TH_10P-P2.00-V-M-R2-C5-S2.00
 10
 cheap-wled-controller
 LED0603-RD_WHITE
+
+
+0
+2
+2
+cheap-wled-controller
+LED0805-R-RD
 
 
 0
