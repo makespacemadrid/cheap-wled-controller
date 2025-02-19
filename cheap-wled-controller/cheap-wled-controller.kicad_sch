@@ -7605,10 +7605,6 @@
 		(uuid "489b2c03-27af-486d-ba7d-0c6083237b31")
 	)
 	(no_connect
-		(at 34.29 153.67)
-		(uuid "4f483faa-fafb-4ea8-ae83-de40b2d358d2")
-	)
-	(no_connect
 		(at 66.04 58.42)
 		(uuid "63a75e65-aa23-4c8c-a89a-05d45bc37bd6")
 	)
@@ -7703,10 +7699,6 @@
 	(no_connect
 		(at 34.29 191.77)
 		(uuid "f445d25a-96ee-47c1-923a-a8c83ab16705")
-	)
-	(no_connect
-		(at 57.15 154.94)
-		(uuid "f8179f53-21c1-4fd8-bf9f-2d5b454daa2f")
 	)
 	(wire
 		(pts
@@ -12390,6 +12382,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 57.15 154.94 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cce4359-8b99-4716-8c2d-d775e7a698c0")
+		(property "Reference" "#PWR02"
+			(at 63.5 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.23 154.9399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba70f30c-4855-47ac-8e4e-ec5ed289efb3")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 205.74 153.67 0)
 		(unit 1)
@@ -15252,6 +15311,73 @@
 			(project "cheap-wled-controller"
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 153.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4cfb926-0c6e-43e7-9598-dafd3e489b50")
+		(property "Reference" "#PWR03"
+			(at 27.94 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 153.6699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dcdcc28e-ae64-4fab-8a42-deb3b4e0f889")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
