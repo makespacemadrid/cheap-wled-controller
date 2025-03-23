@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "8.0.8"
     },
-    "CreationDate": "2025-02-19T19:51:53+01:00"
+    "CreationDate": "2025-03-23T20:16:00+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "panelized",
-      "GUID": "70616e65-6c69-47a6-9564-2e6b69636164",
+      "Name": "cheap-wled-controller",
+      "GUID": "63686561-702d-4776-9c65-642d636f6e74",
       "Revision": "rev?"
     },
     "Size": {
-      "X": 98.1,
-      "Y": 96.1
+      "X": 48.05,
+      "Y": 48.05
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -34,52 +34,52 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "panelized-CuTop.gtl",
+      "Path": "cheap-wled-controller-CuTop.gtl",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-CuBottom.gbl",
+      "Path": "cheap-wled-controller-CuBottom.gbl",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-PasteBottom.gbp",
+      "Path": "cheap-wled-controller-PasteBottom.gbp",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-PasteTop.gtp",
+      "Path": "cheap-wled-controller-PasteTop.gtp",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-SilkTop.gto",
+      "Path": "cheap-wled-controller-SilkTop.gto",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-SilkBottom.gbo",
+      "Path": "cheap-wled-controller-SilkBottom.gbo",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-MaskBottom.gbs",
+      "Path": "cheap-wled-controller-MaskBottom.gbs",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "panelized-MaskTop.gts",
+      "Path": "cheap-wled-controller-MaskTop.gts",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "panelized-EdgeCuts.gm1",
+      "Path": "cheap-wled-controller-EdgeCuts.gm1",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "panelized-CmtUser.gbr",
+      "Path": "cheap-wled-controller-CmtUser.gbr",
       "FileFunction": "Other,User",
       "FilePolarity": "Positive"
     }

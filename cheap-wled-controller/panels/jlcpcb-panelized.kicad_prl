@@ -74,7 +74,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "panelized.kicad_prl",
+    "filename": "jlcpcb-panelized.kicad_prl",
     "version": 3
   },
   "project": {
