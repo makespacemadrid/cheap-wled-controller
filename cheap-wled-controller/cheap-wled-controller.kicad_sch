@@ -5194,6 +5194,159 @@
 				)
 			)
 		)
+		(symbol "easyeda:50YXJ22M5X11"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "50YXJ22M5X11"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "cheap-wled-controller:CAP-TH_BD5.0-P2.00-D0.5-FD-1"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C432364"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "50YXJ22M5X11_0_1"
+				(rectangle
+					(start -2.03 2.03)
+					(end -1.02 2.03)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.52 2.54)
+					(end -1.52 1.52)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.76 2.54) (xy -0.76 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.25 0)
+					(mid 0.8442 1.2066)
+					(end 1.02 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.02 -2.54)
+					(mid 0.8471 -1.2057)
+					(end 0.25 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 180)
+					(length 4.318)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 0)
+					(length 4.826)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "easyeda:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -6672,6 +6825,141 @@
 				)
 			)
 		)
+		(symbol "easyeda:TSOP38238"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TSOP38238"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "cheap-wled-controller:SENSOR-TG_TSOP38236"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Infrared-Receivers_VISHAY_TSOP38238_TSOP38238_C141632.html"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC Part" "C141632"
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TSOP38238_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 5.84 -5.59)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -1.78 4.32)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "horizontal_button:MX5014S"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -7325,6 +7613,12 @@
 		(uuid "55ffcb55-6196-4a6d-ad9a-deb0e22583f5")
 	)
 	(junction
+		(at 273.05 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59486505-1308-456b-8589-e9d0d77f582a")
+	)
+	(junction
 		(at 207.01 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7371,6 +7665,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75fb8c74-eebc-44bc-b144-b1dc3e5f17f4")
+	)
+	(junction
+		(at 250.19 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "763206a4-0ebf-4b67-aba4-9cb15c713cd1")
 	)
 	(junction
 		(at 22.86 109.22)
@@ -7770,6 +8070,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 39.37) (xy 257.81 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2700e6f3-b05c-4927-bf2c-95738b1f7afb")
+	)
+	(wire
+		(pts
 			(xy 215.9 60.96) (xy 227.33 60.96)
 		)
 		(stroke
@@ -7890,6 +8200,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 71.12) (xy 250.19 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b9e296-2edb-430b-b57c-25f495363617")
+	)
+	(wire
+		(pts
 			(xy 232.41 60.96) (xy 237.49 60.96)
 		)
 		(stroke
@@ -7947,6 +8267,16 @@
 			(type default)
 		)
 		(uuid "3afc004a-8643-49d0-b899-b30096337852")
+	)
+	(wire
+		(pts
+			(xy 273.05 43.18) (xy 273.05 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bbf1b48-618f-4a91-839f-58e2a35ac38f")
 	)
 	(wire
 		(pts
@@ -8040,16 +8370,6 @@
 	)
 	(wire
 		(pts
-			(xy 278.13 66.04) (xy 273.05 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49400c2b-4a5a-4ebe-a045-a9bc85e485e4")
-	)
-	(wire
-		(pts
 			(xy 213.36 74.93) (xy 219.71 74.93)
 		)
 		(stroke
@@ -8110,6 +8430,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 144.78) (xy 78.74 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55f34890-c9e8-4953-8417-1cdc8f8c7735")
+	)
+	(wire
+		(pts
 			(xy 62.23 170.18) (xy 57.15 170.18)
 		)
 		(stroke
@@ -8147,6 +8477,16 @@
 			(type default)
 		)
 		(uuid "57e56b0c-df2e-40be-a8d4-785293c89338")
+	)
+	(wire
+		(pts
+			(xy 241.3 90.17) (xy 243.84 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af539df-486f-45d3-ad79-c240d9a092f4")
 	)
 	(wire
 		(pts
@@ -8580,6 +8920,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 66.04) (xy 278.13 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5719619-ca5c-49e4-b0ad-3bc440fe47a7")
+	)
+	(wire
+		(pts
 			(xy 22.86 109.22) (xy 26.67 109.22)
 		)
 		(stroke
@@ -8680,6 +9030,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 143.51) (xy 76.2 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad2a49e8-71e4-4e88-95ee-fca46e5e6a95")
+	)
+	(wire
+		(pts
 			(xy 104.14 171.45) (xy 109.22 171.45)
 		)
 		(stroke
@@ -8707,6 +9067,16 @@
 			(type default)
 		)
 		(uuid "ae47b14e-faef-4fa6-81b0-bb8987586289")
+	)
+	(wire
+		(pts
+			(xy 71.12 143.51) (xy 76.2 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af74a94d-a7ba-4cdb-8fbb-78b3c2c5af5b")
 	)
 	(wire
 		(pts
@@ -8767,6 +9137,16 @@
 			(type default)
 		)
 		(uuid "b5ee41b6-5e67-4680-9832-64e68c0d6741")
+	)
+	(wire
+		(pts
+			(xy 250.19 43.18) (xy 273.05 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba3077f3-d02c-438c-85af-196e124c652c")
 	)
 	(wire
 		(pts
@@ -9100,6 +9480,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 71.12) (xy 250.19 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7a7ea5-ffb9-48d7-9802-d6c340118145")
+	)
+	(wire
+		(pts
 			(xy 203.2 73.66) (xy 207.01 73.66)
 		)
 		(stroke
@@ -9117,6 +9507,16 @@
 			(type default)
 		)
 		(uuid "f1a4179e-5582-431b-a068-f3cd67d57859")
+	)
+	(wire
+		(pts
+			(xy 250.19 43.18) (xy 250.19 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2f2181f-f6a1-49fb-9bee-60430bc25f2c")
 	)
 	(wire
 		(pts
@@ -9187,6 +9587,16 @@
 			(type default)
 		)
 		(uuid "fae56ee3-29d8-44c8-8524-0d0c4fea2b8c")
+	)
+	(wire
+		(pts
+			(xy 241.3 71.12) (xy 241.3 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd73e685-bd5c-48e3-9dd1-c219e87feebf")
 	)
 	(wire
 		(pts
@@ -10535,7 +10945,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1d0fd323-d03c-4701-95ed-0d68266bf55f")
 		(property "Reference" "U9"
 			(at 261.62 55.88 0)
@@ -10605,6 +11014,88 @@
 			(project ""
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda:TSOP38238")
+		(at 83.82 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "211143cf-7425-49c9-8037-00ceb9c97da7")
+		(property "Reference" "LED1"
+			(at 91.44 143.7649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TSOP38238"
+			(at 91.44 146.3049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "cheap-wled-controller:SENSOR-TG_TSOP38236"
+			(at 83.82 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Infrared-Receivers_VISHAY_TSOP38238_TSOP38238_C141632.html"
+			(at 83.82 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C141632"
+			(at 83.82 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "913f1d2f-99d8-4256-8ed7-2916dae4d0a2")
+		)
+		(pin "1"
+			(uuid "86f55056-2c3a-4886-bbab-3cb37b1eb006")
+		)
+		(pin "2"
+			(uuid "1d55952c-9115-4a09-a46d-525ab4464b93")
+		)
+		(instances
+			(project ""
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "LED1")
 					(unit 1)
 				)
 			)
@@ -11120,6 +11611,72 @@
 			(project "cheap-wled-controller"
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4731c4f4-747c-44f5-8018-769d360b6867")
+		(property "Reference" "#PWR06"
+			(at 254 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21b08fac-b705-49a9-973c-019d77b8ebd7")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -12158,6 +12715,149 @@
 			(project "cheap-wled-controller"
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda:50YXJ22M5X11")
+		(at 248.92 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ecc5207-13cd-40f8-a341-08448f853cfd")
+		(property "Reference" "C11"
+			(at 249.174 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50YXJ22M5X11"
+			(at 249.174 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cheap-wled-controller:CAP-TH_BD5.0-P2.00-D0.5-FD-1"
+			(at 248.92 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C432364"
+			(at 248.92 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3dfb3845-9a43-4107-b5c7-9e36cc1644a4")
+		)
+		(pin "1"
+			(uuid "10f18945-dcac-4962-8eb9-3828451afc9f")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 143.51 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5ee5d091-82cf-4d74-95be-f86663130fdf")
+		(property "Reference" "#PWR015"
+			(at 64.77 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f38f82f-3b55-4951-9e05-590028c77cf7")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -13924,6 +14624,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 267.97 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fd38004-4f39-4a45-ac5d-adb24a443dab")
+		(property "Reference" "#PWR013"
+			(at 267.97 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 267.97 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 267.97 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44c45170-6921-4466-936e-432527142f91")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "easyeda:CL21A106KOQNNNE")
 		(at 227.33 66.04 90)
 		(unit 1)
@@ -14554,7 +15320,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c3c6ee70-4ba8-416a-be5e-9e6809385f17")
 		(property "Reference" "#PWR020"
 			(at 254 68.58 0)
@@ -14773,6 +15538,71 @@
 			(project "cheap-wled-controller"
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 78.74 147.32 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd5ee2cd-7068-4d28-9c48-1e59e54b99af")
+		(property "Reference" "#PWR014"
+			(at 82.55 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 74.93 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 78.74 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64086c2f-769d-447b-8dc3-cd04965b794a")
+		)
+		(instances
+			(project "cheap-wled-controller"
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -15546,6 +16376,83 @@
 			(project "cheap-wled-controller"
 				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda:50YXJ22M5X11")
+		(at 262.89 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e703820f-a20f-44db-8686-774dfd185d69")
+		(property "Reference" "C10"
+			(at 263.144 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "50YXJ22M5X11"
+			(at 263.144 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "cheap-wled-controller:CAP-TH_BD5.0-P2.00-D0.5-FD-1"
+			(at 262.89 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 262.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C432364"
+			(at 262.89 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bb11bb84-9dd4-4d04-b6bf-e1226624c082")
+		)
+		(pin "1"
+			(uuid "7f353c27-c4e4-42a3-aaad-48a2980007b1")
+		)
+		(instances
+			(project ""
+				(path "/6a5d3644-22ac-4961-ba70-9807615c046f"
+					(reference "C10")
 					(unit 1)
 				)
 			)
