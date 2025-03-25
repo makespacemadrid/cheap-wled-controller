@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,8.0.8*
-G04 #@! TF.CreationDate,2025-03-23T20:16:00+01:00*
+G04 #@! TF.CreationDate,2025-03-24T19:57:08+01:00*
 G04 #@! TF.ProjectId,cheap-wled-controller,63686561-702d-4776-9c65-642d636f6e74,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Bot*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 8.0.8) date 2025-03-23 20:16:00*
+G04 Created by KiCad (PCBNEW 8.0.8) date 2025-03-24 19:57:08*
 %MOMM*%
 %LPD*%
 G01*
@@ -92,12 +92,12 @@ X54110000Y-57500000D03*
 G04 #@! TD*
 D19*
 G04 #@! TO.C,C11*
-X20500000Y-53500000D03*
-X20500000Y-55500000D03*
+X20700000Y-53400000D03*
+X20700000Y-55400000D03*
 G04 #@! TD*
 G04 #@! TO.C,C10*
-X54500000Y-49000000D03*
-X56500000Y-49000000D03*
+X55600000Y-50000000D03*
+X55600000Y-48000000D03*
 G04 #@! TD*
 D17*
 G04 #@! TO.C,J8*

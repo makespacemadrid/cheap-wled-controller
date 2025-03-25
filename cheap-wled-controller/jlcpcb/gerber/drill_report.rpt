@@ -1,5 +1,5 @@
 Drill report for cheap-wled-controller.kicad_pcb
-Created on 2025-03-23T20:16:00+0100
+Created on 2025-03-24T19:57:08+0100
 
 Copper Layer Stackup:
     =============================================================
@@ -7,10 +7,10 @@ Copper Layer Stackup:
     L2 :  B.Cu                      back
 
 
-Drill file 'cheap-wled-controller.drl' contains
+Drill file 'cheap-wled-controller-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.300mm  0.0118"  (116 holes)
+    T1  0.300mm  0.0118"  (114 holes)
     T2  0.700mm  0.0276"  (2 holes)
     T3  0.700mm  0.0276"  (4 holes)
     T4  0.750mm  0.0295"  (4 holes)
@@ -20,12 +20,12 @@ Drill file 'cheap-wled-controller.drl' contains
     T8  1.000mm  0.0394"  (12 holes)
     T9  1.400mm  0.0551"  (5 holes)
 
-    Total plated holes count 160
+    Total plated holes count 158
 
 
-Not plated through holes are merged with plated holes
+Drill file 'cheap-wled-controller-NPTH.drl' contains
     unplated through holes:
     =============================================================
-    T10  3.200mm  0.1260"  (2 holes)
+    T1  3.200mm  0.1260"  (2 holes)
 
     Total unplated holes count 2
