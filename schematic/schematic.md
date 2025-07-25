@@ -6,7 +6,7 @@ En este apartado se describen los componentes principales del circuito para gest
 
 ## 🔌 Conector USB-C
 
-El conector USB-C que se utiliza en la placa tiene doce patillas con una separación muy pequeña entre cada una de ellas, además en los dos extremos se encuentran los pines de alimentación (GND y VBUS), por lo que una mala soldadura podría generar un cortocircuito. 
+El conector USB-C que se utiliza en la placa tiene doce patillas con una separación muy pequeña entre cada una de ellas; además, en los dos extremos se encuentran los pines de alimentación (GND y VBUS), por lo que una mala soldadura podría generar un cortocircuito. 
 
 ![Connector](/images/footprint_USB.png)
 
@@ -16,7 +16,7 @@ El conector USB-C que se utiliza en la placa tiene doce patillas con una separac
 
 ## CH224K
 
-El CH224K es el componente encargado de gestionar el protocolo power delibery (PD).
+El CH224K es el componente encargado de gestionar el protocolo *power delibery* (PD).
 
 📄 [Descargar datasheet](https://github.com/makespacemadrid/cheap-wled-controller/blob/main/datasheet/ch224k.pdf)
 
@@ -58,7 +58,7 @@ El CH224K es el componente encargado de gestionar el protocolo power delibery (P
 ---
 ## TPS54202
 
-El voltaje que sale del CH224K entra en el buck converter TPS54202, que será el encargado de generar los 5 voltios estables del circuito.
+El voltaje que sale del CH224K entra en el *buck converter* TPS54202, que será el encargado de generar los 5 voltios estables del circuito.
 
 📄 [Descargar datasheet](/datasheet/tps54202.pdf)
 
@@ -70,14 +70,14 @@ El voltaje que sale del CH224K entra en el buck converter TPS54202, que será el
 
 - **Configuración del circuito:**
   
-  En el esquema del circuito se puede observar la configuración del componente, compuesta por resistencias, condensadores y la bobina L2, que mediante su carga (en forma de campo magnético) y descarga genera la corriente necesaria para alimentar a los condensadores, quienes estabilizarán los 5 voltios de salida (+5V)
+  En el esquema del circuito se puede observar la configuración del componente, compuesta por resistencias, condensadores y la bobina L2, que mediante su carga (en forma de campo magnético) y descarga genera la corriente necesaria para alimentar los condensadores, que estabilizarán los 5 voltios de salida (+5V).
 
   ![Schematic](/images/tps54202ddc.png)
 
 ---
 ## AMS1117 3-3V
 
-Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) AMS1117 comienza a trabajar para entregar los 3,3V. Hay que tener en cuenta que, la corriente máxima que puede entregar este regulador es de 1A. 
+Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) AMS1117 comienza a trabajar para entregar los 3,3V. Hay que tener en cuenta que la corriente máxima que puede entregar este regulador es de 1A. 
 
 📄 [Descargar datasheet](/datasheet/ams1117.pdf)
 
@@ -112,7 +112,7 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
 ---
 ## MX5014S
 
- La tira LED se alimenta a través del voltaje que se genera en el mosfet Q3, que está controlado por el MX5014S, quien a su vez responde del IO47 del ESP32.
+ La tira LED se alimenta a través del voltaje que se genera en el MOSFET Q3, que está controlado por el MX5014S, y que a su vez responde del IO47 del ESP32.
 
 📄 [Descargar datasheet](/datasheet/mx5014s.pdf)
 
