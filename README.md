@@ -48,6 +48,15 @@ Las tiras led compatibles con el firmware son: https://kno.wled.ge/basics/compat
 
 
 ## Flasheo y configuración de firmware WLED
+
+### Flasheo
+- Descargamos el binario desde el repositorio: https://github.com/wled/WLED/releases
+En nuestro caso estamos usando un esp32 s3 con 4MB, por lo tanto bajamos este binario: https://github.com/wled/WLED/releases/download/nightly/WLED_0.16.0-alpha_ESP32-S3_4M_qspi.bin
+- Instalamos la herramienta de flasheo: `pip install esptool`
+- 
+
+
+### Configuración
 En LED preferences:
 
 La configuración de la tira:
