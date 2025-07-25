@@ -31,7 +31,7 @@ Esta pcb tiene la particularidad de usar para su alimentación un usb c con PD (
 - una lata de refresco
 - cinta de carrocero
 - cinta de doble cara sin espuma. La que usamos nosotros es esta, comprada en papelerías Folder:
-[acomprada en papelerías Folder](/images/cinta_doble_cara.png)
+[comprada en papelerías Folder](/images/cinta_doble_cara.png)
 
 ### Carcasa
 - 4 tornillos M3x6
@@ -45,7 +45,19 @@ Las tiras led compatibles con el firmware son: https://kno.wled.ge/basics/compat
 
 
 ## Fabricación de stencil
+Usaremos el software Flatcam, en el que cargamos la capa "paste top" del gerber que generamos en Kicad para enviar a fabricar la PCB.
+Esta capa contiene la geometría de los pads de todos los componentes. 
 
+El proceso lo vamos a llevar a cabo con una fresa de 30 grados y 0.1 de diámetro. Asumiendo que la lata de refresco tiene un grosor de 0.2mm.
+Las capturas de los pasos a seguir son las siguientes:
+
+![](/images/flatcam1.png)
+![](/images/flatcam2.png)
+![](/images/flatcam3.png)
+![](/images/flatcam4.png)
+![](/images/flatcam5.png)
+
+El gcode generado finalmente lo hemos subido [aquí](/includes/paste_top.gcode).
 
 ## Flasheo y configuración de firmware WLED
 
