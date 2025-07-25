@@ -1,46 +1,90 @@
-### Esquema de la placa
+# Esquema de la placa
 
-En esta sección se describen los componentes principales del circuito. 
+En este apartado se describen los componentes principales del circuito para gestionar la alimentación y regulación de voltaje de la tira LED.
 
-#### Conector USB-C
+---
+
+## 🔌 Conector USB-C
 
 El conector USB-C que se utiliza en la placa tiene doce patillas con una separación muy pequeña entre cada una de ellas, además en los dos extremos se encuentran los pines de alimentación (GND y VBUS), por lo que una mala soldadura podría generar un cortocircuito. 
 
 ![Connector](/images/footprint_USB.png)
 
-Es importante que antes de conectar la placa se mida la resistencia entre los pines de alimentación para asegurar que no haya cortocircuito.
+> **Es importante que antes de conectar la placa se mida la resistencia entre los pines de alimentación para comprobar que no haya cortocircuito.**
 
-#### CH224K
+---
 
-El componente encargado del power delibery (PD) es el CH224K.
+## CH224K
 
-El datasheet del componente se puede descargar aquí [Datasheet](https://github.com/makespacemadrid/cheap-wled-controller/blob/main/datasheet/ch224k.pdf)
+El CH224K es el componente encargado de gestionar el protocolo power delibery (PD).
 
-El encapsulado del componente es el **ESSOP-10** y la distribución de sus pines es la siguiente:
+📄 [Descargar datasheet](https://github.com/makespacemadrid/cheap-wled-controller/blob/main/datasheet/ch224k.pdf)
 
-![Pin](/images/ch224k_pin.png)
+- **Encapsulado:** ESSOP-10
+- **Distribución de pines:**
 
-Las funciones de cada uno de los pines se detallan a continuación:
+  ![Pin](/images/ch224k_pin.png)
 
-![Pin description](/images/ch224k_pin_description.png)
 
-Los pines encargados de  configurar la salida del voltaje son el 2, el 3 y el 9. En este caso solo se utiliza el pin 9 para este fin.
 
-![Schematic](/images/ch224k_david_schematic.png)
+| Pin No.     | Pin name | Pin type          | Pin description                                                                 |
+|-------------|----------|-------------------|----------------------------------------------------------------------------------|
+| 0           | GND      | Power             | Ground. Heat dissipation EPAD.                                                  |
+| 1           | VDD      | Power             | Operating power input. Requires external 1uF decoupling capacitor. Connected in series with a resistor to VBUS. |
+| 4, 5        | DP, DM   | Input/Output      | USB data line                                                                   |
+| 6, 7        | CC1, CC2 | Input/Output      | Type-C CC data line                                                             |
+| 2, 3, 9     | CFG1, CFG2, CFG3 | Analog input     | Power configuration input                                                       |
+| 8           | VBUS     | Analog input      | Voltage detection input. Connected in series with a resistor to external VBUS.  |
+| 10          | PG       | Open-drain output | Indicates Power Good by default. Active low. Can be customized.                |
 
-En función de la resistencia que se conecte al pin 9, el voltaje de salida variará. Por ejemplo, si se conecta una resistencia de 10 kΩ del pin 9 a tierra, el voltaje de salida (VBUS_CONN) será de 5 V.
 
-![Resistor](/images/ch224k_config_resistances.png)
+- **Configuración de voltaje de salida:**
 
-#### TPS54202
+  Los pines encargados de  configurar la salida del voltaje son el 2, el 3 y el 9. En este caso solo se utiliza el pin 9, por lo que en función de la resistencia que se conecte a este pin, el voltaje de salida variará entre 5 y 20 voltios.
 
-El voltaje que sale del CH224K entra en el buck converter TPS54202, con un rango de voltaje de entrada entre los 4,5 V a los 28 V, y cuyo datasheet se puede descargar aqui [Datasheet](/datasheet/tps54202.pdf)
+  ![Schematic](/images/ch224k_david_schematic.png)
 
-El encapsulado del componente es el **TPS54202** y la distribución de sus pines es la siguiente:
+   >Por ejemplo, si se conecta una resistencia de 10 kΩ del pin 9 a tierra, el voltaje de salida (VBUS_CONN) será de 5 V.
 
-![Pin](/images/tps54202_pin.png)
+  | Resistance on CFG to VDD | Request-voltage |
+  |--------------------------|-----------------|
+  | 10KΩ                     | 5V              |
+  | 20KΩ                     | 9V              |
+  | 47KΩ                     | 12V             |
+  | 100KΩ                    | 15V             |
+  | 200KΩ                    | 20V             |
 
-En el esquema del circuito se puede observar la configuración del componente:
 
-![Schematic](/images/tps54202ddc.png)
+---
+## TPS54202
 
+El voltaje que sale del CH224K entra en el buck converter TPS54202.
+
+📄 [Descargar datasheet](/datasheet/tps54202.pdf)
+
+- **Encapsulado:** SOT-23
+- **Distribución de pines:**
+
+  ![Distribución de pines TPS54202](/images/tps54202_pin.png)
+
+- **Configuración del circuito:**
+  En el esquema del circuito se puede observar la configuración del componente, compuesta por resistencias, condensadores y la bobina L2, que mediante su carga (en forma de campo magnético) y descarga genera la corriente necesaria para alimentar a los condensadores, quienes estabilizarán los 5 voltios de salida (+5V)
+
+  ![Schematic](/images/tps54202ddc.png)
+
+---
+## AMS1117 3-3V
+
+Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) AMS1117 comienza a trabajar. Hay que tener en cuenta que, la corriente máxima que puede entregar este regulador es de 1A. 
+
+📄 [Descargar datasheet](/datasheet/ams1117.pdf)
+
+- **Distribución de pines:**
+
+  ![Distribución de pines AMS1117](/images/ams1117_pin.png)
+
+  > PIN 1: GND
+  >
+  > PIN 2: VOUT
+  >
+  > PIN 3: VDD
