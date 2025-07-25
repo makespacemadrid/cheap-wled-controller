@@ -59,7 +59,12 @@ La configuración del mosfet para apagar la tira:
 ![alt text](/images/relay_config.png)
 
 El botón en placa permite encender y apagar la tira manualmente:
+
 ![alt text](/images/button_config.png)
+
+Para configurar el mando usaremos [este](/includes/18-key-ir.json) fichero json.
+
+![alt text](/images/ir_config.png)
 
 ## Software necesario
 - [Kicad](https://www.kicad.org/): Diseño pcb y generación de gerbers.
