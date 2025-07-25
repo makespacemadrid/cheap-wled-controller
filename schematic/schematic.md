@@ -58,7 +58,7 @@ El CH224K es el componente encargado de gestionar el protocolo power delibery (P
 ---
 ## TPS54202
 
-El voltaje que sale del CH224K entra en el buck converter TPS54202.
+El voltaje que sale del CH224K entra en el buck converter TPS54202, que será el encargado de generar los 5 voltios estables del circuito.
 
 📄 [Descargar datasheet](/datasheet/tps54202.pdf)
 
@@ -77,7 +77,7 @@ El voltaje que sale del CH224K entra en el buck converter TPS54202.
 ---
 ## AMS1117 3-3V
 
-Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) AMS1117 comienza a trabajar. Hay que tener en cuenta que, la corriente máxima que puede entregar este regulador es de 1A. 
+Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) AMS1117 comienza a trabajar para entregar los 3,3V. Hay que tener en cuenta que, la corriente máxima que puede entregar este regulador es de 1A. 
 
 📄 [Descargar datasheet](/datasheet/ams1117.pdf)
 
@@ -112,7 +112,7 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
 ---
 ## MX5014S
 
- La tira LED se alimenta a través del voltaje que se genera en el mosfet Q3, que está controlado por el MX5014S.
+ La tira LED se alimenta a través del voltaje que se genera en el mosfet Q3, que está controlado por el MX5014S, quien a su vez responde del IO47 del ESP32.
 
 📄 [Descargar datasheet](/datasheet/mx5014s.pdf)
 
