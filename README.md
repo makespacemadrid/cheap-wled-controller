@@ -30,7 +30,7 @@ Esta pcb tiene la particularidad de usar para su alimentación un usb c con PD (
 - una lata de refresco
 - cinta de carrocero
 - cinta de doble cara sin espuma. La que usamos nosotros es esta, comprada en papelerías Folder:
-![acomprada en papelerías Folder](/images/cinta_doble_cara.png)
+[acomprada en papelerías Folder](/images/cinta_doble_cara.png)
 
 ## Tiras led
 Las tiras led compatibles con el firmware son: https://kno.wled.ge/basics/compatible-led-strips/
