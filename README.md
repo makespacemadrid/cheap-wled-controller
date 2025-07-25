@@ -6,12 +6,14 @@ Continuando con el proceso lógico de aprendizaje,
 ahora este proyecto pretende servir como una primera aproximación en la práctica de soldadura SMD (componentes de montaje superficiales), 
 así como fabricación de stencil usando una CNC (maquina de control numérico).
 
-Junto al proyecto Kicad también se encuentran los stl de la carcasa para 
+Junto al proyecto Kicad también se encuentran los stl de la carcasa para imprimirla en 3d.
 
 El repositorio con el proyecto Kicad: https://github.com/makespacemadrid/cheap-wled-controller718714
 
+Esta pcb tiene la particularidad de usar para su alimentación un usb c con PD (Power delivery), lo que permite negociar diferentes votlajes y de este modo usar tiras led que trabajen a 5v, 9v, 12v, etc.
 
-## BOM PCB
+## BOM 
+### PCB
 - [CH224K USB PD Protocol Sink Chip IC 10Pcs/lot](https://www.aliexpress.com/item/1005005284290184.html?spm=a2g0o.order_list.order_list_main.5.21ef194dDFnpwX)
 - [AMS1117 3.3](https://www.aliexpress.com/item/1005005350284100.html?spm=a2g0o.order_list.order_list_main.544.21ef194dDFnpwX)
 - ESP32-S3-WROOM-1-N4R
@@ -24,9 +26,22 @@ El repositorio con el proyecto Kicad: https://github.com/makespacemadrid/cheap-w
 - [pin-header](https://lcsc.com/product-detail/Pin-Headers_Megastar-ZX-PZ2-0-2-5PZZ_C7501288.html?s_z=n_C7501288)
 - [mosfet canal N](https://lcsc.com/product-detail/MOSFETs_YANGJIE-YJG100N04A_C919580.html?s_z=n_C919580)
 
-## BOM para Stencil
+### Stencil
 - [fresa 3.175mmx15Dx0.1, CN](https://www.aliexpress.com/item/4000966103866.html?spm=a2g0o.order_list.order_list_main.509.21ef194dDFnpwX)
 - una lata de refresco
+- cinta de carrocero
+- cinta de doble cara sin espuma. La que usamos nosotros es esta, comprada en papelerías Folder:
+[acomprada en papelerías Folder](/images/cinta_doble_cara.png)
+
+### Carcasa
+- 4 tornillos M3x6
+- 4 insertos metálicos [Length 4mm, M3 (OD 5mm)](https://es.aliexpress.com/item/1005004870993068.html?spm=a2g0o.order_list.order_list_main.17.506f194dqZ3Ccw&gatewayAdapt=glo2esp)
+
+## Tiras led
+Las tiras led compatibles con el firmware son: https://kno.wled.ge/basics/compatible-led-strips/
+- La tira led que usamos en el taller es esta: [WS2813 DC5V, White PCB, 2m 60 IP65](https://es.aliexpress.com/item/1005004289391906.html?spm=a2g0o.order_list.order_list_main.10.5d6c194dSriMHZ&gatewayAdapt=glo2esp)
+- Para la alimentación sirve cualquier cargador de móvil con carga rápida, IKEA tiene [estos](https://www.ikea.com/es/es/p/sjoss-cargador-usb-1-puerto-30-w-carga-rapida-50549412/) a muy buen precio
+- [conectores hembra y macho JST SM de 4 pines](https://es.aliexpress.com/item/1005004615616698.html)
 
 
 ## Fabricación de stencil
@@ -34,6 +49,31 @@ El repositorio con el proyecto Kicad: https://github.com/makespacemadrid/cheap-w
 
 ## Flasheo y configuración de firmware WLED
 
+### Flasheo
+- Descargamos el binario desde el repositorio: https://github.com/wled/WLED/releases
+En nuestro caso estamos usando un esp32 s3 con 4MB, por lo tanto bajamos este binario: https://github.com/wled/WLED/releases/download/nightly/WLED_0.16.0-alpha_ESP32-S3_4M_qspi.bin
+- Instalamos la herramienta de flasheo: `pip install esptool`
+- 
+
+
+### Configuración
+En LED preferences:
+
+La configuración de la tira:
+
+![alt text](/images/led_config.png)
+
+La configuración del mosfet para apagar la tira:
+
+![alt text](/images/relay_config.png)
+
+El botón en placa permite encender y apagar la tira manualmente:
+
+![alt text](/images/button_config.png)
+
+Para configurar el mando usaremos [este](/includes/18-key-ir.json) fichero json.
+
+![alt text](/images/ir_config.png)
 
 ## Software necesario
 - [Kicad](https://www.kicad.org/): Diseño pcb y generación de gerbers.
