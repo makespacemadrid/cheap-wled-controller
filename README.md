@@ -62,10 +62,10 @@ El gcode generado finalmente lo hemos subido [aquí](/includes/paste_top.gcode).
 ## Flasheo y configuración de firmware WLED
 
 ### Flasheo
-- Descargamos el binario desde el repositorio: https://github.com/wled/WLED/releases
-En nuestro caso estamos usando un esp32 s3 con 4MB, por lo tanto bajamos este binario: https://github.com/wled/WLED/releases/download/nightly/WLED_0.16.0-alpha_ESP32-S3_4M_qspi.bin
-- Instalamos la herramienta de flasheo: `pip install esptool`
-- 
+
+En nuestro caso estamos usando un esp32 s3 con 4MB, por lo que vamos a flashear desde la web: https://wled-install.github.io/
+
+![alt text](/images/flashing.png)
 
 
 ### Configuración
