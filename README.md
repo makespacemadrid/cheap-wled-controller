@@ -6,10 +6,11 @@ Continuando con el proceso lógico de aprendizaje,
 ahora este proyecto pretende servir como una primera aproximación en la práctica de soldadura SMD (componentes de montaje superficiales), 
 así como fabricación de stencil usando una CNC (maquina de control numérico).
 
-Junto al proyecto Kicad también se encuentran los stl de la carcasa para 
+Junto al proyecto Kicad también se encuentran los stl de la carcasa para imprimirla en 3d.
 
 El repositorio con el proyecto Kicad: https://github.com/makespacemadrid/cheap-wled-controller718714
 
+Esta pcb tiene la particularidad de usar para su alimentación un usb c con PD (Power delivery), lo que permite negociar diferentes votlajes y de este modo usar tiras led que trabajen a 5v, 9v, 12v, etc.
 
 ## BOM PCB
 - [CH224K USB PD Protocol Sink Chip IC 10Pcs/lot](https://www.aliexpress.com/item/1005005284290184.html?spm=a2g0o.order_list.order_list_main.5.21ef194dDFnpwX)
@@ -27,7 +28,15 @@ El repositorio con el proyecto Kicad: https://github.com/makespacemadrid/cheap-w
 ## BOM para Stencil
 - [fresa 3.175mmx15Dx0.1, CN](https://www.aliexpress.com/item/4000966103866.html?spm=a2g0o.order_list.order_list_main.509.21ef194dDFnpwX)
 - una lata de refresco
+- cinta de carrocero
+- cinta de doble cara sin espuma. La que usamos nosotros es esta, comprada en papelerías Folder:
+![acomprada en papelerías Folder](/images/cinta_doble_cara.png)
 
+## Tiras led
+Las tiras led compatibles con el firmware son: https://kno.wled.ge/basics/compatible-led-strips/
+La tira led que usamos en el taller es esta: [WS2813 DC5V, White PCB, 2m 60 IP65](https://es.aliexpress.com/item/1005004289391906.html?spm=a2g0o.order_list.order_list_main.10.5d6c194dSriMHZ&gatewayAdapt=glo2esp)
+
+Para la alimentación sirve cualquier cargador de móvil con carga rápida, IKEA tiene [estos](https://www.ikea.com/es/es/p/sjoss-cargador-usb-1-puerto-30-w-carga-rapida-50549412/) a muy buen precio
 
 ## Fabricación de stencil
 
