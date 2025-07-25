@@ -63,11 +63,13 @@ El voltaje que sale del CH224K entra en el buck converter TPS54202.
 📄 [Descargar datasheet](/datasheet/tps54202.pdf)
 
 - **Encapsulado:** SOT-23
+  
 - **Distribución de pines:**
 
   ![Distribución de pines TPS54202](/images/tps54202_pin.png)
 
 - **Configuración del circuito:**
+  
   En el esquema del circuito se puede observar la configuración del componente, compuesta por resistencias, condensadores y la bobina L2, que mediante su carga (en forma de campo magnético) y descarga genera la corriente necesaria para alimentar a los condensadores, quienes estabilizarán los 5 voltios de salida (+5V)
 
   ![Schematic](/images/tps54202ddc.png)
@@ -90,6 +92,7 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
   > PIN 3: VDD
 
 - **Configuración del circuito:**
+  
   ![Schematic](/images/AMS1117.png)
 
 ---
@@ -102,6 +105,7 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
   ![Distribución de pines ESP32-S3-WROOM-1-N4R2](/images/esp32_pin.png)
 
 - **Configuración del circuito:**
+  
   ![Schematic](/images/esp32_schematic.png)
 
 
@@ -113,8 +117,11 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
 📄 [Descargar datasheet](/datasheet/mx5014s.pdf)
 
 - **Distribución de pines:**
+  
   ![Distribución de los pines](/images/mx5014s_pin.png)
+
 - **Configuración del circuito:**
+  
   ![Schematic](/images/mx5014s_schematic.png)
 
 # Líneas de voltaje principales
