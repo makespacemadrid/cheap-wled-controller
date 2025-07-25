@@ -203,7 +203,6 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
   
   ![Schematic](/images/esp32_schematic.png)
 
-
 ---
 ### MX5014S
 
@@ -228,6 +227,13 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
 |+3.3V|3.3V|AMS1117|
 |LED_1_VCC|5-20V|Q3
 
+---
+## Stencil con los valores de los componentes
+
+![Stencil](/images/stencil_components_values.png)
+
+![Stencil](/images/stencil_components_values_color.png)
+---
 ## Autores
 - [David Poza](http://github.com/davidpoza)
 - [Jose David](http://github.com/jose8david)
