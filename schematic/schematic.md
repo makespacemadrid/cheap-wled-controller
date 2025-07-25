@@ -1,6 +1,6 @@
 # Esquema de la placa
 
-En este apartado se describen los componentes principales del circuito para gestionar la alimentación y regulación de voltaje de la tira LED.
+En este apartado se describen los componentes principales del circuito para gestionar la alimentación y regulación del voltaje de la tira LED.
 
 ---
 
@@ -10,7 +10,7 @@ El conector USB-C que se utiliza en la placa tiene doce patillas con una separac
 
 ![Connector](/images/footprint_USB.png)
 
-> **Es importante que antes de conectar la placa se mida la resistencia entre los pines de alimentación para comprobar que no haya cortocircuito.**
+> **Es importante que antes de conectar la placa se mida la resistencia entre los pines de alimentación para comprobar que no haya cortocircuito 🔥.**
 
 ---
 
@@ -88,3 +88,40 @@ Una vez que se ha generado el voltaje +5V, el regulador de voltaje lineal (LDO) 
   > PIN 2: VOUT
   >
   > PIN 3: VDD
+
+- **Configuración del circuito:**
+  ![Schematic](/images/AMS1117.png)
+
+---
+## ESP32-S3-WROOM-1-N4R2
+
+📄 [Descargar datasheet](/datasheet/esp32-s3.pdf)
+
+- **Distribución de pines:**
+
+  ![Distribución de pines ESP32-S3-WROOM-1-N4R2](/images/esp32_pin.png)
+
+- **Configuración del circuito:**
+  ![Schematic](/images/esp32_schematic.png)
+
+
+---
+## MX5014S
+
+ La tira LED se alimenta a través del voltaje que se genera en el mosfet Q3, que está controlado por el MX5014S.
+
+📄 [Descargar datasheet](/datasheet/mx5014s.pdf)
+
+- **Distribución de pines:**
+  ![Distribución de los pines](/images/mx5014s_pin.png)
+- **Configuración del circuito:**
+  ![Schematic](/images/mx5014s_schematic.png)
+
+# Líneas de voltaje principales
+
+|Línea|Voltaje|Componente|
+|-----|-------|----------|
+|V_LED_|5-20V|CH224K|
+|+5V|5V|TPS54202|
+|+3.3V|3.3V|AMS1117|
+|LED_1_VCC|5-20V|Q3
