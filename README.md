@@ -99,6 +99,12 @@ En este apartado se describen los componentes principales del circuito para gest
 
 ---
 
+### Información sobre el power delivery
+
+📄 [UPD301A USB Power Delivery Operation](/datasheet/AN3265MicroChip.pdf)
+
+📄 [A Primer on USB Type-C® and USB Power Delivery Applications and Requirements](/datasheet/PowerDeliveryTexas.pdf)
+
 ### 🔌 Conector USB-C
 
 El conector USB-C que se utiliza en la placa tiene doce patillas con una separación muy pequeña entre cada una de ellas; además, en los dos extremos se encuentran los pines de alimentación (GND y VBUS), por lo que una mala soldadura podría generar un cortocircuito. 
